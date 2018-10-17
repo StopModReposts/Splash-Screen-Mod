@@ -1,3 +1,4 @@
+#PARSE_ESCAPES
 stopmodreposts.gui.information.btnclose=Close
 stopmodreposts.gui.information.btnmoreinfo=Read More
-stopmodreposts.gui.information.information=WARNING!;Did you download all your mods form Curse(-forge) or the MinecraftForum? ;If not, you might have downloaded a with malware/adware infected mod;from a repost site, these mod reposting sites steal property and income from developers.;;Here are a few links, to the most used official hosters:;modlink1;modlink2;;More information about all this can be found here:;stopmodreposts.org;;You can ignore this message if you downloaded the mod from the official  sources.  stopmodreposts.gui.information.linecount=13
+stopmodreposts.gui.information.information=\u00A7l\u00A76Have you downloaded all your mods from Curse(-forge) or the MinecraftForum? No?\u00A7r\n\nWell, then you might have a problem, lots of other sites re-host mods, without any permissions. And some of them, also include malware into these files.\n \n If you want to be save in the future, only download from Curse(-forge) or the Minecraft Forums.\n Press the button on the left if you wanna know more about this, and be safe in the future.

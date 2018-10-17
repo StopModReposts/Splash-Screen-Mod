@@ -29,8 +29,15 @@ public class References {
 	public static Logger LOGGER = null;
 
 	public static boolean shouldShowUp() {
-		//The commented code will disabled the popup in dev environment
-		return /*!(Boolean) Launch.blackboard.get("fml.deobfuscatedEnvironment") && */  !(hasShown = true);
+		if(!hasShown) {
+			hasShown = true;
+			return true;
+		}else {
+			//Uncomment bottom one, to get this displayed in dev environment.
+			return false;
+			//return (Boolean) Launch.blackboard.get("fml.deobfuscatedEnvironment");
+		}
+
 	}
 
 	public static void init(FMLPreInitializationEvent event){

@@ -48,7 +48,7 @@ public class InformationGui extends GuiScreen {
     	String text = I18n.format(TRANSLATION_BASE_KEY.concat("information"));
 
     	//Split text into multiple lines, the seperateor = ";"
-    	String[] multilineA = text.split(";");
+    	String[] multilineA = text.split("\\n");
 
     	//Further splits the strings and adds them to the label.
     	for(String strA : multilineA) {
