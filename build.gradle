@@ -8,9 +8,10 @@ buildscript {
     }
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'maven-publish'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
-version = "1.12.2-1.0.0"
+version = "1.12.2-1.0.0-SNAPSHOT"
 group = "org.stopmodreposts"
 archivesBaseName = "stopmodreposts"
 
@@ -90,5 +91,27 @@ jar{
 			'Maven-Artifact': "${project.group}:${project.archivesBaseName}:${project.version}",
 			'Timestamp': System.currentTimeMillis()
 		])
+	}
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+			from components.java
+            groupId = project.group
+            artifactId = project.archivesBaseName
+            version = project.version
+        }
+    }
+	
+			
+	repositories {
+		maven{
+			url = "sftp://dark-roleplay.net:22/${project.mvn_path}"
+			credentials {
+				username project.mvn_username_smr
+				password project.mvn_password_smr
+			}
+		}
 	}
 }
