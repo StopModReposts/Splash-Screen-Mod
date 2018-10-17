@@ -1,0 +1,113 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url = "http://files.minecraftforge.net/maven" }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
+}
+apply plugin: 'net.minecraftforge.gradle.forge'
+//Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
+
+
+version = "1.12.2-1.0.0"
+group = "org.stopmodreposts"
+archivesBaseName = "stopmodreposts"
+
+sourceCompatibility = targetCompatibility = '1.8'
+compileJava {
+    sourceCompatibility = targetCompatibility = '1.8'
+}
+
+minecraft {
+    version = "1.12.2-14.23.4.2765"
+    runDir = "run"
+    
+    mappings = "snapshot_20180814"
+	
+	if (project.hasProperty('mc_username')) {
+		clientRunArgs += ['--username', project.mc_username]
+		if (project.hasProperty('mc_password')) {
+			clientRunArgs += ['--password', project.mc_password]
+		}
+	}
+	if (project.hasProperty('mc_uuid')) {
+		clientRunArgs += ['--uuid', project.mc_uuid]
+	}
+
+	// disable server gui
+	serverRunArgs += 'nogui'
+
+	// skip the screen to confirm that you want to load a world with missing registry entries
+	serverJvmArgs += '-Dfml.doNotBackup=true'
+	clientJvmArgs += '-Dfml.doNotBackup=true'
+
+	// skip having to confirm on server
+	serverJvmArgs += '-Dfml.queryResult=confirm'
+
+	//skip jansi warnings in the log
+	serverJvmArgs += '-Dlog4j.skipJansi=true'
+	clientJvmArgs += '-Dlog4j.skipJansi=true'
+}
+
+
+repositories {
+}
+
+
+dependencies {
+}
+
+configurations {
+    embed
+    compile.extendsFrom(embed)
+}
+
+processResources {
+    // this will ensure that this task is redone when the versions change.
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+
+    // replace stuff in mcmod.info, nothing else
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+                
+        // replace version and mcversion
+        expand 'version':project.version, 'mcversion':project.minecraft.version
+    }
+        
+    // copy everything else except the mcmod.info
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}
+
+//Signing the Jar
+task signJar(type: SignJar, dependsOn: reobfJar) {
+
+	if(project.hasProperty('jarSigning.store')){
+		keyStore = project.findProperty('jarSigning.store')
+		alias = project.findProperty('jarSigning.alias')
+		storePass = project.findProperty('jarSigning.storePass')
+		keyPass = project.findProperty('jarSigning.keyPass')
+		
+		inputFile = jar.archivePath
+		outputFile = jar.archivePath
+	}
+}
+build.dependsOn signJar
+
+jar{
+	into('META-INF/libraries'){
+		from configurations.embed
+	}
+
+	manifest {
+		attributes([
+            'ContainedDeps': configurations.embed.collect { it.getName() }.join(' '),
+			'Maven-Artifact': "${project.group}:${project.archivesBaseName}:${project.version}",
+			'Timestamp': System.currentTimeMillis()
+		])
+	}
+}
