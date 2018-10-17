@@ -1,0 +1,4 @@
+stopmodreposts.gui.information.btnclose=Fermer
+stopmodreposts.gui.information.btnmoreinfo=Lira la suite
+stopmodreposts.gui.information.information=ATTENTION !;Avez-vous téléchargé tous vos mods depuis Curse(-forge) ou le forum Minecraft(officiel) ? Si pas, vous avez peut-être téléchargé un mod infecté par un malware/adware;depuis un site de redistribution, les sites qui redistribuent ces mods volent la propriété et les revenus de ses développeurs,; vous trouverez ici quelques liens des hébergeurs officiels:;modlink1;modlink2;;Toutes les informations peuvent être trouvées ici:;stopmodreposts.org;;Vous pouvez ignorer ce message si vous avez téléchargé vos mods depuis une source officielle.    stopmodreposts.gui.information.linecount=13
+
