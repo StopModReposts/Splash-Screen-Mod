@@ -1,4 +1,4 @@
 #PARSE_ESCAPES
 stopmodreposts.gui.information.btnclose=Close
 stopmodreposts.gui.information.btnmoreinfo=Read More
-stopmodreposts.gui.information.information=\u00A7l\u00A76Have you downloaded all your mods from Curse(-forge) or the MinecraftForum? No?\u00A7r\n\nWell, then you might have a problem, lots of other sites re-host mods, without any permissions. And some of them, also include malware into these files.\n \n If you want to be save in the future, only download from Curse(-forge) or the Minecraft Forums.\n Press the button on the left if you wanna know more about this, and be safe in the future.
+stopmodreposts.gui.information.information=\u00A7l\u00A76Have you downloaded all your mods from Curse(-forge) or the MinecraftForum? No?\u00A7r\n\nWell, then you might have a problem, lots of other sites re-host mods, without any permissions. And some of them, also include malware into these files.\n \nIn order to be safe from such risks in the future, only download mods from Curse(-forge) or the Minecraft Forums.\nPress the button on the left if you wanna know more about this, and be safe in the future.
