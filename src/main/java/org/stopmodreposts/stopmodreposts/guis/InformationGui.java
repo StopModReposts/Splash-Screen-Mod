@@ -23,7 +23,6 @@ public class InformationGui extends GuiScreen {
 	private static final ResourceLocation SMR_LOGO = new ResourceLocation(StopModReposts.MODID, "textures/guis/smr_logo.png");
 	private static final String TRANSLATION_BASE_KEY = "stopmodreposts.gui.information.";
 
-	private FontRenderer fontRenderer = null;
 	//The Instance of the MainMenu for compatibility with mods like CustomMainMenu
 	private GuiScreen parent = null;
 
@@ -33,12 +32,13 @@ public class InformationGui extends GuiScreen {
 	private GuiLabel lblInformation = null;
 
 	public InformationGui(GuiScreen parent) {
-		this.fontRenderer = Minecraft.getMinecraft().fontRenderer;
 		this.parent = parent;
 	}
 
 	@Override
     public void initGui(){
+		FontRenderer fontRenderer = Minecraft.getMinecraft().fontRenderer;
+
 		this.labelList.clear();
     	this.buttonList.clear();
 

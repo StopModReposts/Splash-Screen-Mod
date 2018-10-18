@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.ModMetadata;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = StopModReposts.MODID, version = StopModReposts.VERSION, name = StopModReposts.NAME, acceptedMinecraftVersions = StopModReposts.ACCEPTEDVERSIONS, certificateFingerprint = "893c317856cf6819b3a8381c5664e4b06df7d1cc")
+@Mod(modid = StopModReposts.MODID, version = StopModReposts.VERSION, name = StopModReposts.NAME, clientSideOnly = true, acceptedMinecraftVersions = StopModReposts.ACCEPTEDVERSIONS, certificateFingerprint = "893c317856cf6819b3a8381c5664e4b06df7d1cc")
 public class StopModReposts {
 
 	public static final String MODID = "stopmodreposts";

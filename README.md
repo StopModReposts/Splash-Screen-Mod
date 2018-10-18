@@ -1,10 +1,8 @@
 ## What does 'StopModReposts' do?
----
 It adds this beautiful GUI, in order to educate more users about the problem of mod reposting sites.
 ![Preview Image](https://raw.githubusercontent.com/StopModReposts/Splash-Screen-Mod/master/preview.png)
 
 ## How can I help as a Modder?
----
 If you wanna help just embed this mod into your mod (it's not a dependency).
 The more players read this, the better our chances are.
 
@@ -47,5 +45,4 @@ stopmodreposts_version=1.0.0
 ```
 
 ## How can I help as a User?
----
 To be continued
