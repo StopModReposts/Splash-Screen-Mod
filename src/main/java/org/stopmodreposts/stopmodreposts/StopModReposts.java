@@ -6,7 +6,10 @@ import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.stopmodreposts.stopmodreposts.events.GuiOpened;
 
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.ModMetadata;
@@ -46,6 +49,9 @@ public class StopModReposts {
 
 	@EventHandler
 	public void init(FMLPreInitializationEvent event) {
+		if(!Loader.isModLoaded("custommainmenu"))
+			MinecraftForge.EVENT_BUS.register(new GuiOpened());
+
 		LOGGER = LogManager.getLogger(MODID);
 
 		STOP_REPOST_FILE = new File("./StopModReposts.info");
@@ -66,5 +72,4 @@ public class StopModReposts {
 		meta.updateJSON = UPDATE_JSON;
 		meta.url = URL;
 	}
-
 }
