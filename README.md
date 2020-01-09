@@ -8,13 +8,11 @@ That a person downloaded the file from curseforge, doesn't mean that it knows wh
 
 
 ## How can I help as a Modder?
-If you wanna help just embed* this mod into your mod (it's not a dependency).
-The more players read this, the better our chances are.
+If you wanna help just include this mod inside your mod (it's not a dependency).
+The more players read this, the better our chances are in educating people about the problem of mod reposting.
 
-* Embeding the mod means that the mod jar will be put into your mod jar, and forge will extract this mod.
-
-### How to embed this Mod?
-All you need to embed this mod into yours is to add a few things to your build.gradle file
+### How to include this Mod?
+All you need to include this mod inside yours is to add a few things to your build.gradle file
 ```GRADLE
 configurations {
     embedNoCompile
@@ -30,7 +28,7 @@ dependencies {
 	embedNoCompile "org.stopmodreposts:stopmodreposts:${mc_version}-${stopmodreposts_version}"
 }
 
-jar{
+jar {
 	into('META-INF/libraries'){
 		from configurations.embedNoCompile
 	}
@@ -43,10 +41,7 @@ jar{
 }
 ```
 (Note: we are using `embedNoCompile` because you don't want to use any of the mods classes, unlike with most things you wanna embed)
-And add this to your gradle.properties file
+Also add this to your gradle.properties file
 ```GRADLE
 stopmodreposts_version=1.0.0
 ```
-
-## How can I help as a User?
-To be continued
