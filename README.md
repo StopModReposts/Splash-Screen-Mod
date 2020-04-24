@@ -49,4 +49,4 @@ stopmodreposts_version=1.0.0
 ```
 
 ## How can I help as a User?
-To be continued
+Don't visit the sites. Download our [browser extension](https://stopmodreposts.org/dl/extension.html) to prevent yourself from accidentally visiting a reposting site. If you visit one, that means more money for them.
