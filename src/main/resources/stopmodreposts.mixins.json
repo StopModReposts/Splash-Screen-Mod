@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.stopmodreposts.stopmodreposts.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "SplashScreenMixin",
+    "TitleScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "stopmodreposts",
+  "version": "${version}",
+
+  "name": "StopModReposts",
+  "description": "It adds this beautiful GUI, in order to educate more users about the problem of mod reposting sites. And don't worry, it does only show up once per Minecraft directory. (once per installation location)",
+  "authors": [
+    "falseresync",
+    "JTK222"
+  ],
+  "contact": {
+    "homepage": "https://stopmodreposts.org",
+    "sources": "https://github.com/StopModReposts/Splash-Screen-Mod",
+    "issues": "https://github.com/StopModReposts/Splash-Screen-Mod/issues",
+    "discord": "https://discord.gg/tZBeUy3"
+  },
+
+  "license": "MIT",
+  "icon": "assets/stopmodreposts/textures/gui/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.stopmodreposts.stopmodreposts.SMR"
+    ],
+    "modmenu": [
+      "org.stopmodreposts.stopmodreposts.SMRModMenuCompat"
+    ]
+  },
+  "mixins": [
+    "stopmodreposts.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric-resource-loader-v0": "*"
+  }
+}
