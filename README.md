@@ -1,3 +1,11 @@
+# Splash-Screen Mod
+[Forge Version](https://github.com/StopModReposts/Splash-Screen-Mod) - [Fabric Version](https://github.com/StopModReposts/Splash-Screen-Mod/tree/fabric)
+
+This mod helps modders to bring attention to players about the StopModReposts campaign.
+
+---
+# Forge Version
+
 ## What does 'StopModReposts' do?
 It adds this beautiful GUI, in order to educate more users about the problem of mod reposting sites.
 And don't worry, it does only show up once per Minecraft Directory. (once per installation location)</br>
@@ -5,7 +13,6 @@ Disclaimer: The screenshot doesn't showcase the latest text.</br>
 ![Preview Image](https://raw.githubusercontent.com/StopModReposts/Splash-Screen-Mod/master/preview.png)
 The Goal of this project isn't to accuse people of something, but rather to educate them.</br>
 That a person downloaded the file from curseforge, doesn't mean that it knows what repost sites are.
-
 
 ## How can I help as a Modder?
 If you wanna help just embed* this mod into your mod (it's not a dependency).
