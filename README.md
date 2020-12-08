@@ -1,5 +1,5 @@
 # Splash-Screen Mod
-[Forge Version](https://github.com/StopModReposts/Splash-Screen-Mod) - [Fabric Version](https://github.com/StopModReposts/Splash-Screen-Mod/tree/fabric)
+[Forge Version](https://github.com/StopModReposts/Splash-Screen-Mod) - [Fabric Version](https://github.com/StopModReposts/Splash-Screen-Mod-Fabric)
 
 This mod helps modders to bring attention to players about the StopModReposts campaign.
 
