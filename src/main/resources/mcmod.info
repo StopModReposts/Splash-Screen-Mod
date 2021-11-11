@@ -1,0 +1,10 @@
+[{
+  "modid": "stopmodreposts",
+  "name": "Stop Mod Reposts",
+  "description": "This mod displays a popup upon loading that informs users about the danger that is mod reposting websites.",
+  "version": "1.0.0",
+  "mcversion": "1.12.2",
+  "logofile": "textures/guis/smr_logo.png",
+  "url": "https://stopmodreposts.org",
+  "authorList": ["JTMK222"]
+}]

@@ -96,19 +96,10 @@ public class InformationGui extends GuiScreen {
     protected void actionPerformed(GuiButton button) throws IOException {
 		if(button == this.btnClose) {
 			Minecraft.getMinecraft().displayGuiScreen(this.parent);
-	    	try {
-	    		/*
-	    		 * TODO create a file containing some more information and maybe more links
-	    		 * Then copy it out of the assets
-	    		 */
-	    		StopModReposts.STOP_REPOST_FILE.createNewFile();
 
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}else if(button == this.btnMoreInfo) {
+		} else if(button == this.btnMoreInfo) {
 			ITextComponent linkHelper = new TextComponentString("");
-			linkHelper.getStyle().setClickEvent(new ClickEvent( ClickEvent.Action.OPEN_URL, StopModReposts.URL));
+			linkHelper.getStyle().setClickEvent(new ClickEvent( ClickEvent.Action.OPEN_URL, "https://stopmodreposts.org"));
 
 			this.handleComponentClick(linkHelper);
 		}
