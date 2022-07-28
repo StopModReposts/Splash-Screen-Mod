@@ -24,7 +24,7 @@ public class StopModReposts {
 	}
 
 	@SubscribeEvent
-	public static void showScreen(ScreenEvent.Opening event) {
+	public static void showScreen(ScreenEvent.Init event) {
 		if (event.getScreen() instanceof TitleScreen && !StopModReposts.STOP_REPOST_FILE.exists()) {
 			Minecraft.getInstance().setScreen(new InformationGui(event.getScreen()));
 		}
