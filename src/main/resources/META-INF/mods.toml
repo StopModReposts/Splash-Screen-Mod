@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[41,)"
+
+license="All rights reserved"
+
+[[mods]]
+modId="stopmodreposts"
+version="${file.jarVersion}"
+
+displayName="Stop Mod Reposts"
+displayURL="http://stopmodreposts.org/"
+logoFile="icon.png"
+
+credits="Credit to OutCraft for updating the mod to 1.18.2 and 1.19"
+authors="berrysauce, JTK222"
+description=''''''
+
+
+[[dependencies.stopmodreposts]]
+    modId="forge"
+    mandatory=true
+    versionRange="[41,)"
+    ordering="NONE"
+    side="BOTH"
+	
+[[dependencies.stopmodreposts]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19,1.20)"
+    ordering="NONE"
+    side="BOTH"
