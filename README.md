@@ -14,10 +14,10 @@ The Goal of this project isn't to accuse people of something, but rather to educ
 That a person downloaded the file from curseforge, doesn't mean that it knows what repost sites are.
 
 ## How can I help as a Modder?
-If you wanna help just embed* this mod into your mod.
+If you want to help just embed this mod into your mod.
 The more players read this, the better our chances are.
 
-* Embeding the mod means that the mod jar will be put into your mod jar, and forge will extract this mod.
+* Embedding the mod means that the mod jar will be put into your mod jar, and forge will extract this mod.
 
 ### How to embed this Mod?
 The first thing you need to do is build the mod yourself, as it doesn't have a maven repo yet:
@@ -48,7 +48,11 @@ gradlew --refresh-dependencies
 gradlew genEclipseRuns / genIntellijRuns
 gradlew eclipse / intellij
 ```
-That's it! Thanks for letting the users of your mod know about StopModReposts!
+Now put the ```stopmodreposts.jar``` file into ./libs (```<Your main mod folder that also contains gradlew.bat>/libs```) and that's it! Thanks for letting the users of your mod know about StopModReposts!
+
+If you need more help using jar-in-jar look at the [Forge Community Wiki Page about Jar-in-Jar](https://forge.gemwire.uk/wiki/Jar-in-Jar)
 
 ## How can I help as a User?
-Go on our [website](https://stopmodreposts.org) and download our [extension](https://stopmodreposts.org/extension) to be safe from mod-reposting sites in the future.
+Visit our [website](https://stopmodreposts.org), tell other people about the StopModReposts campaign and download our [extension](https://stopmodreposts.org/extension) to be safe from mod-reposting sites in the future.
+
+If you're using *uBlock Origin* you can import out blacklist without needing the plugin: https://api.stopmodreposts.org/minecraft/ublacklist.txt
