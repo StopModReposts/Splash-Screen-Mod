@@ -7,7 +7,7 @@ This mod helps modders to bring attention to players about the StopModReposts ca
 # Forge Version
 
 ## What does this Mod do?
-StopModReposts adds this beautiful GUI, in order to educate more users about the problem of mod reposting sites.
+The StopModReposts Splash-Screen Mod adds this beautiful GUI, in order to educate more users about the problem of mod reposting sites.
 And don't worry, it does only show up once per Minecraft Directory. (Once per installation location)</br>
 ![Preview Image](https://raw.githubusercontent.com/StopModReposts/Splash-Screen-Mod/master/preview.png)</br>
 The Goal of this project isn't to accuse people of something, but rather to educate them.</br>
